@@ -8,11 +8,11 @@ import torch.nn as nn
 import torch.utils.data.distributed
 import torch.multiprocessing as mp
 
-from options.train_options import TrainOptions
-from learning.contrast_trainer import ContrastTrainer
-from networks.build_backbone import build_model
-from datasets.util import build_contrast_loader
-from memory.build_memory import build_mem
+from .options.train_options import TrainOptions
+from .learning.contrast_trainer import ContrastTrainer
+from .networks.build_backbone import build_model
+from .datasets.util import build_contrast_loader
+from .memory.build_memory import build_mem
 
 
 def main():

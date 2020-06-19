@@ -7,11 +7,11 @@ import torch
 import torch.nn as nn
 import torch.multiprocessing as mp
 
-from options.test_options import TestOptions
-from learning.linear_trainer import LinearTrainer
-from networks.build_backbone import build_model
-from networks.build_linear import build_linear
-from datasets.util import build_linear_loader
+from .options.test_options import TestOptions
+from .learning.linear_trainer import LinearTrainer
+from .networks.build_backbone import build_model
+from .networks.build_linear import build_linear
+from .datasets.util import build_linear_loader
 
 
 def main():
